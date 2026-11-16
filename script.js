@@ -7,7 +7,7 @@ document.getElementById("myform").addEventListener("submit",function(event){
     let name=document.getElementById("name").value.trim();
     let phone=document.getElementById("phone").value.trim();
     let email=document.getElementById("email").value.trim();
-    let course=document.getElementById("course");
+  let course=document.getElementById("course");
     let result=document.getElementById("success");
     let error= document.getElementById("error");
     
@@ -29,9 +29,7 @@ document.getElementById("myform").addEventListener("submit",function(event){
 
         let student={
             name:name,
-            phone:phone,
-            email:email,
-            course:course.value
+            phone:phone
         }
         students.push(student);
         document.getElementById("display").textContent=`name: ${student.name}`;
