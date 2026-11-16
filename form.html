@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>registration form</title>
+</head>
+<body>
+    <header>
+        <h1>form</h1>
+        <p id="head">fill this form</p>
+    </header>
+
+    <nav>
+        <a href="#registration">Home</a>
+        <a href="#dom">Dom</a>
+    </nav>
+
+    <section id="registration">
+        <form id="myform">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="phone"> Phone</label>
+            <input type="text" id="phone">
+
+            <label for="course">dept</label>
+            <select id="course">
+                <option value="" disabled selected>Enter a choice</option>
+                <option>it</option>
+                <option>mech</option>
+                <option>comp sci</option>
+            </select>
+
+            <button type="submit" id="submit">Click here to submit</button>
+
+            <p id="error"></p>
+            <p id="display"></p>
+        </form>
+           <p id="success"></p>
+    </section>
+
+    <section id="dom">
+        
+
+        <button type="button" onclick="changeTheme()">change theme</button>    
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
